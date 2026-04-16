@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Paris Shuttles | Airport Transfer Questions Answered</title>
+<meta name="description" content="Frequently asked questions about booking Paris airport taxi transfers, CDG to Disneyland, payment, cancellation and more.">
+<meta name="keywords" content="airport transfer faq, cdg to paris taxi questions, airport taxi booking help, paris airport transfer questions">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
+<meta name="description" content="Comfortable airport transport in Paris with private cars, taxi service and minibus hire options." />
+
+<meta name="keywords" content="airport transport, airport minibus hire, airport taxi transfer, airport cars" />
+
+<meta property="og:title" content="Airport Transport Service Paris" />
+<meta property="og:description" content="Private airport transport, cars and minibus hire service." />
+<meta property="og:url" content="https://paris-shuttles.fr/airport-transport.html" />
+<meta property="og:type" content="website" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Airport Transport Paris" />
+<meta name="twitter:description" content="Private cars and airport transport service." />
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/image/favicon.png">
+
+</head>
+<body data-page="faq">
+<script src="nav.js"></script>
+
+<div class="page-wrap">
+
+    <nav>
+     <div class="nav-inner">
+    
+    <div class="logo">
+      <img src="image/logo.png" />
+      <div class="logo-text">Paris<span>Shuttles</span></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"   class="${currentPage==='home'?'active':''}">Home</a></li>
+      <li><a href="services.html" class="${currentPage==='services'?'active':''}">Services</a></li>
+      <li><a href="fleet.html"   class="${currentPage==='fleet'?'active':''}">Our Fleet</a></li>
+      <li><a href="rates.html"   class="${currentPage==='rates'?'active':''}">Our Rates</a></li>
+      <li><a href="about.html"   class="${currentPage==='about'?'active':''}">About</a></li>
+      <li><a href="faq.html"     class="${currentPage==='faq'?'active':''}">FAQ</a></li>
+      <li><a href="contact.html"     class="${currentPage==='contact'?'active':''}">Contact</a></li>
+      <li><a href="https://groupebluevanparis.com/contact-us/en" class="nav-bt">Book Now</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html"    class="${currentPage==='home'?'active':''}"> Home</a>
+    <a href="services.html" class="${currentPage==='services'?'active':''}"> Services</a>
+    <a href="fleet.html"    class="${currentPage==='fleet'?'active':''}"> Our Fleet</a>
+    <a href="rates.html"    class="${currentPage==='rates'?'active':''}"> Our Rates</a>
+    <a href="about.html"    class="${currentPage==='about'?'active':''}"> About Us</a>
+    <a href="faq.html"      class="${currentPage==='faq'?'active':''}"> FAQ</a>
+    <a href="contact.html"     class="${currentPage==='contact'?'active':''}">Contact</a>
+    <a href="https://groupebluevanparis.com/contact-us/en" class="nav-bt">Book Now</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="section-tag">FAQ</div>
+    <h1 class="section-title">Frequently Asked Questions</h1>
+    <p class="section-desc">Everything you need to know about booking your Paris airport transfer.</p>
+  </div>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+
+      
+
+      <div class="faq-cats" style="justify-content:center;">
+        <button class="faq-cat-btn active" onclick="filterFAQ('all',this)">All Questions</button>
+        <button class="faq-cat-btn" onclick="filterFAQ('booking',this)">Booking</button>
+        <button class="faq-cat-btn" onclick="filterFAQ('payment',this)">Payment</button>
+        <button class="faq-cat-btn" onclick="filterFAQ('service',this)">Service</button>
+        <button class="faq-cat-btn" onclick="filterFAQ('routes',this)">Routes</button>
+      </div>
+
+      <div class="faq-list" id="faqList">
+
+        <div class="faq-item" data-cat="booking">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>How do I book an airport transfer?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">You can book online through our contact form, by email, or by phone. Simply provide your pickup location, destination, date, time, number of passengers and vehicle preference. You'll receive instant confirmation by email and SMS.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="booking">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>How far in advance should I book?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">We recommend booking at least 24 hours in advance. We do accept last-minute bookings depending on availability. For peak travel periods (school holidays, public holidays), we recommend booking a week or more ahead.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="booking">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>Can I cancel or modify my booking?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">Yes. Free cancellation is available up to 24 hours before your scheduled pickup. Modifications can be made up to 12 hours before. Please contact us directly — there is no charge for changes made in time.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="booking">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>Can I book a return transfer?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">Yes, and we recommend it! Booking both arrival and departure transfers together ensures continuity of service. A small discount is often available for return bookings — ask when you contact us.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="payment">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>What payment methods do you accept?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">We accept all major credit/debit cards (Visa, Mastercard, Amex), PayPal, and cash (EUR). Payment can be made in advance online or in cash to the driver. Corporate accounts with monthly invoicing are available.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="payment">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>Are there any hidden fees or extra charges?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">No. Our prices are completely transparent and all-inclusive. The price includes VAT, tolls, airport parking fees, and driver waiting time (60 min at CDG, 45 min at Orly). The only additional charge is a 10% night surcharge between 22:00 and 06:00.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="service">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>What if my flight is delayed?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">We monitor all incoming flights in real time. If your flight is delayed, your driver automatically adjusts their arrival time. There is no extra charge for flight delays. Please ensure you provide your correct flight number when booking.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="service">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>How will I find my driver at the airport?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">Your driver will be waiting in the arrivals hall with a clearly visible sign bearing your name, positioned at the meeting point for your terminal. You'll also receive your driver's phone number in your booking confirmation so you can contact them directly.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="service">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>Are child seats available?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">Yes! Child seats and booster seats are available free of charge. Please specify the ages and number of children requiring seats when you book so we can ensure the correct seat is fitted before your journey.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="service">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>Do your drivers speak English?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">Yes. All our drivers speak English to a good conversational level. Many also speak Spanish, Arabic or Portuguese. If you have specific language requirements, please let us know when booking and we'll do our best to accommodate.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="routes">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>Do you transfer to Disneyland Paris from CDG?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">Absolutely! CDG to Disneyland Paris is one of our most popular routes, taking approximately 30 minutes and costing from €45 for a standard car. We cover all Disneyland hotels including Newport Bay, Hotel New York, Sequoia Lodge and Santa Fe.</div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-cat="routes">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <h4>Which airports do you serve?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-body">We serve all three major Paris airports: Charles de Gaulle (CDG/Roissy), Orly (ORY), and Beauvais-Tillé (BVA). We also offer transfers between airports if you have a connecting flight requiring a terminal change.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <div class="cta-banner">
+          <h2>Still Have Questions?</h2>
+          <p>Our team is available 24/7 to answer any queries about your Paris airport transfer.</p>
+          <div class="cta-btns">
+            <a href="contact.html" class="btn-accent">📞 Contact Us Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo">
+              <img src="image/logo.png" />             
+            </div>
+          </div>
+          <p>Professional airport transfers from CDG, Orly &amp; Beauvais to Paris, Disneyland and beyond. Available 24/7 with fixed prices and no hidden fees.</p>
+          
+        </div>
+        <div class="footer-col">
+          <h5>Our Services</h5>
+          <ul>
+            <li><a href="services.html">Airport Taxi Transfer</a></li>
+            <li><a href="services.html">CDG to Disneyland Paris</a></li>
+            <li><a href="services.html">Shuttle Transfer</a></li>
+            <li><a href="services.html">Minibus Hire</a></li>
+            <li><a href="services.html">Business Class</a></li>
+            <li><a href="services.html">Day Trips</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Popular Routes</h5>
+          <ul>
+            <li><a href="rates.html">CDG to Paris Centre</a></li>
+            <li><a href="rates.html">CDG to Disneyland</a></li>
+            <li><a href="rates.html">Orly to Paris Centre</a></li>
+            <li><a href="rates.html">Paris to Versailles</a></li>
+            <li><a href="rates.html">Beauvais to Paris</a></li>
+            <li><a href="rates.html">Airport to Airport</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fleet.html">Our Fleet</a></li>
+            <li><a href="rates.html">Our Rates</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Book Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Paris Shuttles. All rights reserved. Licensed private hire — Webbuilders.lk</p>
+       
+      </div>
+    </div>
+  </footer>
+
+<script src="main.js"></script>
+<script>
+function searchFAQ(query) {
+  var q = query.toLowerCase().trim();
+  document.querySelectorAll('.faq-item').forEach(function(item) {
+    var text = item.querySelector('h4').textContent.toLowerCase()
+              + item.querySelector('.faq-answer-body').textContent.toLowerCase();
+    item.style.display = (!q || text.includes(q)) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

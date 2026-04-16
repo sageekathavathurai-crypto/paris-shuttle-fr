@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Paris Shuttles | Paris Airport Transfer Company</title>
+<meta name="description" content="About Paris Shuttles — over 10 years serving CDG, Orly & Beauvais airports. Professional, reliable airport taxi service in Paris.">
+<meta name="keywords" content="paris airport transfer company, airport taxi service paris, airport transport paris, about paris shuttles">
+<link rel="stylesheet" href="style.css">
+<style>
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem; align-items: center;
+  margin-bottom: 4rem;
+}
+
+.about-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* or contain */
+  border-radius: var(--radius-lg);
+  display: block;
+}
+
+.about-float {
+  position: absolute;
+  bottom: -18px; right: -18px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.4rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.about-float .num { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--primary); font-weight: 700; }
+.about-float .lbl { font-size: 0.72rem; color: var(--text3); text-transform: uppercase; letter-spacing: 0.07em; }
+
+.values-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1rem; margin-top: 2rem;
+}
+
+.value-item {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.value-item .v-icon { font-size: 1.4rem; margin-bottom: 0.4rem; }
+.value-item h5 { font-size: 0.88rem; margin-bottom: 0.2rem; }
+.value-item p { font-size: 0.78rem; color: var(--text2); line-height: 1.55; }
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1.25rem;
+}
+
+.number-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+}
+
+.number-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.number-card .big { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: var(--primary); font-weight: 700; margin-bottom: 0.35rem; }
+.number-card .lbl { font-size: 0.8rem; color: var(--text2); }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.5rem;
+}
+
+.team-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+}
+
+.team-card:hover { border-color: var(--accent); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+
+.team-avatar {
+  width: 68px; height: 68px; border-radius: 50%;
+  background: var(--bg2);
+  border: 2px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 1rem;
+}
+
+.team-name { font-size: 1rem; margin-bottom: 0.25rem; }
+.team-role { font-size: 0.78rem; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; }
+
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-float { bottom: 10px; right: 10px; }
+  .values-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body data-page="about">
+<script src="nav.js"></script>
+
+<div class="page-wrap">
+
+    <nav>
+     <div class="nav-inner">
+    
+    <div class="logo">
+      <img src="image/logo.png" />
+      <div class="logo-text">Paris<span>Shuttles</span></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"   class="${currentPage==='home'?'active':''}">Home</a></li>
+      <li><a href="services.html" class="${currentPage==='services'?'active':''}">Services</a></li>
+      <li><a href="fleet.html"   class="${currentPage==='fleet'?'active':''}">Our Fleet</a></li>
+      <li><a href="rates.html"   class="${currentPage==='rates'?'active':''}">Our Rates</a></li>
+      <li><a href="about.html"   class="${currentPage==='about'?'active':''}">About</a></li>
+      <li><a href="faq.html"     class="${currentPage==='faq'?'active':''}">FAQ</a></li>
+      <li><a href="contact.html"     class="${currentPage==='contact'?'active':''}">Contact</a></li>
+      <li><a href="https://groupebluevanparis.com/contact-us/en" class="nav-bt">Book Now</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html"    class="${currentPage==='home'?'active':''}"> Home</a>
+    <a href="services.html" class="${currentPage==='services'?'active':''}"> Services</a>
+    <a href="fleet.html"    class="${currentPage==='fleet'?'active':''}"> Our Fleet</a>
+    <a href="rates.html"    class="${currentPage==='rates'?'active':''}"> Our Rates</a>
+    <a href="about.html"    class="${currentPage==='about'?'active':''}"> About Us</a>
+    <a href="faq.html"      class="${currentPage==='faq'?'active':''}"> FAQ</a>
+    <a href="contact.html"     class="${currentPage==='contact'?'active':''}">Contact</a>
+    <a href="https://groupebluevanparis.com/contact-us/en" class="nav-bt">Book Now</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="section-tag">Our Story</div>
+    <h1 class="section-title">About Paris Shuttles</h1>
+    <p class="section-desc">Over a decade of experience delivering premium airport transfer services across Paris and the Île-de-France region.</p>
+  </div>
+
+  <section class="section section-white">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div style="position:relative;">
+          <div class="about-img-box"><img src="image/a1.png" /></div>
+          <div class="about-float">
+            <div class="num">10+</div>
+            <div class="lbl">Years in Service</div>
+          </div>
+        </div>
+        <div>
+          <div class="section-tag">Who We Are</div>
+          <h2 class="section-title">Paris's Most Trusted Airport Transfer Company</h2>
+          <p style="color:var(--text2); line-height:1.8; margin-bottom:1.1rem;">
+            Paris Shuttles was founded with a single mission: to make airport transfers in Paris completely stress-free. We started as a small family-run taxi company and have grown into one of the most trusted private hire services in the Île-de-France region.
+          </p>
+          <p style="color:var(--text2); line-height:1.8; margin-bottom:1.5rem;">
+            We specialise in transfers from Charles de Gaulle (CDG), Orly, and Beauvais airports to Paris, Disneyland Paris, Versailles, and beyond. Our professional, English-speaking drivers make us the first choice for international travellers visiting France.
+          </p>
+          <div class="values-grid">
+            <div class="value-item"><div class="v-icon">🎯</div><h5>Reliability</h5><p>98% on-time record with real-time flight monitoring.</p></div>
+            <div class="value-item"><div class="v-icon">💎</div><h5>Quality</h5><p>Modern, clean vehicles maintained to the highest standard.</p></div>
+            <div class="value-item"><div class="v-icon">💶</div><h5>Transparency</h5><p>Fixed prices, no hidden fees, ever. Period.</p></div>
+            <div class="value-item"><div class="v-icon">🤝</div><h5>Professionalism</h5><p>Licensed, trained, English-speaking drivers.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="section-header center">
+        <div class="section-tag">By the Numbers</div>
+        <h2 class="section-title">Paris Shuttles in Numbers</h2>
+      </div>
+      <div class="numbers-grid">
+        <div class="number-card"><div class="big">15,000+</div><div class="lbl">Happy Passengers</div></div>
+        <div class="number-card"><div class="big">3</div><div class="lbl">Airports Served</div></div>
+        <div class="number-card"><div class="big">98%</div><div class="lbl">On-Time Rate</div></div>
+        <div class="number-card"><div class="big">4.9/5</div><div class="lbl">Average Rating</div></div>
+        <div class="number-card"><div class="big">50+</div><div class="lbl">Vehicles in Fleet</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="cta-banner">
+        <h2>Join Thousands of Happy Travellers</h2>
+        <p>Experience the Paris Shuttles difference — professional, punctual and always transparent.</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn-accent">📋 Book Your Transfer</a>
+          <a href="fleet.html" class="btn-secondary" style="border-color:rgba(255,255,255,0.3);color:var(--white);">🚗 See Our Fleet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo">
+              <img src="image/logo.png" /> 
+            </div>
+          </div>
+          <p>Professional airport transfers from CDG, Orly &amp; Beauvais to Paris, Disneyland and beyond. Available 24/7 with fixed prices and no hidden fees.</p>
+          
+        </div>
+        <div class="footer-col">
+          <h5>Our Services</h5>
+          <ul>
+            <li><a href="services.html">Airport Taxi Transfer</a></li>
+            <li><a href="services.html">CDG to Disneyland Paris</a></li>
+            <li><a href="services.html">Shuttle Transfer</a></li>
+            <li><a href="services.html">Minibus Hire</a></li>
+            <li><a href="services.html">Business Class</a></li>
+            <li><a href="services.html">Day Trips</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Popular Routes</h5>
+          <ul>
+            <li><a href="rates.html">CDG to Paris Centre</a></li>
+            <li><a href="rates.html">CDG to Disneyland</a></li>
+            <li><a href="rates.html">Orly to Paris Centre</a></li>
+            <li><a href="rates.html">Paris to Versailles</a></li>
+            <li><a href="rates.html">Beauvais to Paris</a></li>
+            <li><a href="rates.html">Airport to Airport</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fleet.html">Our Fleet</a></li>
+            <li><a href="rates.html">Our Rates</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Book Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Paris Shuttles. All rights reserved. Licensed private hire — Webbuilders.lk</p>
+       
+      </div>
+    </div>
+  </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
